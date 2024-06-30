@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kobita</title>
+<style> 
+#coolMenu,
+#coolMenu ul {
+    list-style: none;
+}
+#coolMenu {
+    float: left;
+}
+#coolMenu > li {
+    float: left;
+}
+#coolMenu li a {
+display: block;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 3.5em;
+    text-decoration: none;
+}
+#coolMenu ul {
+    position: absolute;
+    display: none;
+z-index: 999;
+}
+#coolMenu ul li a {
+    width: 80px;
+}
+#coolMenu li:hover ul {
+    display: block;
+}
+
+/* Main menu
+------------------------------------------*/
+#coolMenu {
+    font-family: Arial;
+    font-size: 12px;
+    background: #2f8be8;
+}
+#coolMenu > li > a {
+    color: #fff;
+    font-weight: bold;
+}
+#coolMenu > li:hover > a {
+    background: #f09d28;
+    color: #000;
+}
+ 
+/* Submenu
+------------------------------------------*/
+#coolMenu ul {
+    background: #white;
+}
+#coolMenu ul li a {
+    color: #000;
+}
+#coolMenu ul li:hover a {
+    background: #ffc97c;
+}
+
+#coolMenu li:hover ul.noJS {
+    display: block; 
+}
+
+$(function(){
+    $('#coolMenu').find('> li').hover(function(){
+        $(this).find('ul')
+        .removeClass('noJS')
+        .stop(true, true).slideToggle('fast');
+    });
+});
+</style>
+</head>
+
+<body>
+<h1><a href="index.html">স্বগতম স্বরচিত কবিতায়</a></h1>
+
+<ul id="coolMenu">
+    <li>
+        <a href="bonita/index_bonita.html">বনিতা</a>
+        <ul>
+            <li><a href="#">বনিতা</a></li>
+            <li><a href="#">কানন মাঝে</a></li>                                            
+            <li><a href="bonita/bonita_2_pram.htm">প্রেম</a></li>
+            <li><a href="#">আধার</a></li>
+           <li><a href="#">দিন</a></li>
+           <li><a href="#">হ্রদয়</a></li>
+           <li><a href="#">ভৃঙ্গললোনা</a></li>
+           <li><a href="#">প্রিয়তমা</a></li>
+           <li><a href="#">হাস্নাহেনা</a></li>
+           <li><a href="#">আষাঢ়ের বৃষ্টি</a></li>
+           <li><a href="#">কবিতা</a></li>                                            
+           <li><a href="#">প্রেয়সী</a></li>                                            
+           <li><a href="#">হ্রদি-মন</a></li>                                            
+           <li><a href="#">জীবনের যতো</a></li>                                            
+           <li><a href="#">ঝরা-যামী</a></li>                                            
+           <li><a href="#">বিরহের ব্যথা</a></li>                                            
+           <li><a href="#">সমাপন</a></li>                                            
+           <li><a href="#">অতীত নিয়ে</a></li>                                            
+           <li><a href="#">নিশি এলে</a></li>                                                       
+           <li><a href="#">বিহঙ্গের সুর</a></li>                                            
+           <li><a href="#">ঝরা নিশি</a></li>                                            
+           <li><a href="#">কেহে প্রেয়সী</a></li>                                                       
+           <li><a href="#">প্রাণ প্রেয়সী</a></li>                                                       
+           <li><a href="#">বধুর সুরে</a></li>                                                                             
+           <li><a href="#">ইয়া মোঃ(সঃ)</a></li>                                                                                      
+        </ul>
+    <li>
+        <a href="#">চাঁদনী</a>
+        <ul>
+            <li><a href="#">বনিতা</a></li>
+            <li><a href="#">কানন মাঝে</a></li>                                            
+            <li><a href="bonita/pram.html">প্রেম</a></li>
+            <li><a href="#">আধার</a></li>
+           <li><a href="#">দিন</a></li>
+           <li><a href="#">হ্রদয়</a></li>
+           <li><a href="#">ভৃঙ্গললোনা</a></li>
+           <li><a href="#">প্রিয়তমা</a></li>
+           <li><a href="#">হাস্নাহেনা</a></li>
+           <li><a href="#">আষাঢ়ের বৃষ্টি</a></li>
+           <li><a href="#">কবিতা</a></li>                                            
+           <li><a href="#">প্রেয়সী</a></li>                                            
+           <li><a href="#">হ্রদি-মন</a></li>                                            
+           <li><a href="#">জীবনের যতো</a></li>                                            
+           <li><a href="#">ঝরা-যামী</a></li>                                            
+           <li><a href="#">বিরহের ব্যথা</a></li>                                            
+           <li><a href="#">সমাপন</a></li>                                            
+           <li><a href="#">অতীত নিয়ে</a></li>                                            
+           <li><a href="#">নিশি এলে</a></li>                                                       
+           <li><a href="#">বিহঙ্গের সুর</a></li>                                            
+           <li><a href="#">ঝরা নিশি</a></li>                                            
+           <li><a href="#">কেহে প্রেয়সী</a></li>                                                       
+           <li><a href="#">প্রাণ প্রেয়সী</a></li>                                                       
+           <li><a href="#">বধুর সুরে</a></li>                                                                             
+           <li><a href="#">ইয়া মোঃ(সঃ)</a></li>                                                                                      
+        </ul>
+    <li>
+        <a href="#">হাস্নাহেনা</a>
+        <ul>
+            <li><a href="#">সুরপরি</a></li>
+            <li><a href="#">বন্ধু</a></li>                                            
+            <li><a href="#">সুরঞ্জনা</a></li>
+            <li><a href="#">হাসনাহেনা</a></li>
+           <li><a href="#">ঝরা ফুল</a></li>
+           <li><a href="#">বিষ-আবেশে</a></li>
+           <li><a href="#">বাঁশি</a></li>
+           <li><a href="#">যুথি</a></li>
+           <li><a href="#">মাদোল</a></li>
+           <li><a href="#">সাকি</a></li>
+           <li><a href="#">প্রিয়হে</a></li>                                            
+           <li><a href="#">পূররবা-উর্বসী</a></li>                                            
+           <li><a href="#">আধাঁর অতি</a></li>                                            
+           <li><a href="#">সুরের বীণায়</a></li>                                            
+           <li><a href="#">আকাঙ্খার</a></li>                                            
+           <li><a href="#">নতুন হিরণ</a></li>                                            
+           <li><a href="#">আলেয়ার আলো</a></li>                                            
+           <li><a href="#">পান্থশালা</a></li>                                            
+           <li><a href="#">কতো ভালবাসা</a></li>                                                       
+           <li><a href="#">সুরপরি</a></li>                                            
+           <li><a href="#">ভালোবাসা</a></li>                                            
+           <li><a href="#">হ্রদয় ভূপালী</a></li>                                                       
+           <li><a href="#">সুরছবি</a></li>                                                       
+           <li><a href="#">সুনয়না</a></li>                                                                             
+           <li><a href="#">মনের তারা</a></li> 
+           <li><a href="#">রাত জাগা পাখি</a></li> 
+           <li><a href="#">ফুল</a></li> 
+           <li><a href="#">বিদায় শেষে</a></li>                                  
+           <li><a href="#">বাহার বিতানে</a></li> 
+           <li><a href="#">শিল্পির সুরে</a></li>            
+           <li><a href="#">নিশি জাগি</a></li> 
+           <li><a href="#">কালের বিতানে</a></li> 
+           <li><a href="#">শুন্যের মাঝে</a></li> 
+        </ul>
+    <li>
+        <a href="#">হুরীর হুতাসন</a>
+        <ul>
+            <li><a href="#">হুরীর হুতাশন</a></li>
+            <li><a href="#">ওগো রাত</a></li>                                            
+            <li><a href="#">মন মৌয়ুরী</a></li>
+            <li><a href="#">নিশির ঝরা</a></li>
+           <li><a href="#">গোপন বধু</a></li>
+           <li><a href="#">অন্তরকোলে</a></li>
+           <li><a href="#">ফসলের প্রসূতি</a></li>
+           <li><a href="#">ডেকোনা আমায়</a></li>
+           <li><a href="#">প্রেয়সী</a></li>
+           <li><a href="#">আমি যারে</a></li>
+           <li><a href="#">নিশির আসরে</a></li>                                            
+           <li><a href="#">ফুল ফুটে</a></li>                                            
+           <li><a href="#">পুস্প বনে</a></li>                                            
+           <li><a href="#">অতীত ভুলে</a></li>                                            
+           <li><a href="#">তুমি সুনিতে</a></li>                                            
+           <li><a href="#">কতটুকু</a></li>                                            
+           <li><a href="#">সখিমন</a></li>                                            
+           <li><a href="#">ফিরিয়ে দিলে</a></li>                                            
+           <li><a href="#">ফুলকুড়ি</a></li>                                                       
+           <li><a href="#">কানন বর</a></li>                                            
+           <li><a href="#">বাঁধন হারা</a></li>                                            
+           <li><a href="#">প্রিয়ে ওগো</a></li>                                                       
+           <li><a href="#">নিশির নিশা</a></li>                                                       
+           <li><a href="#">কেন তাঁকে</a></li>                                                                             
+           <li><a href="#">কেন মোরে</a></li>                                                                                      
+           <li><a href="#">এ মনের</a></li> 
+           <li><a href="#">দুরান্ত সাথি</a></li> 
+           <li><a href="#">মাতা</a></li> 
+        </ul>
+    <li>
+        <a href="#">যুথো বিরাগ</a>
+        <ul>
+            <li><a href="#">রূপবতী</a></li>
+            <li><a href="#">হ্রদয় মাঝে</a></li>                                            
+            <li><a href="#">চন্দ্র</a></li>
+            <li><a href="#">বেদনার সুরে</a></li>
+           <li><a href="#">নিত্য সদা</a></li>
+           <li><a href="#">রোজনামচায়</a></li>
+           <li><a href="#">পীযূষ পিয়ে</a></li>
+           <li><a href="#">অন্তপুরে</a></li>
+           <li><a href="#">বিরহিণী</a></li>
+           <li><a href="#">সজনী</a></li>
+           <li><a href="#">হ্রদয় নীড়ে</a></li>                                            
+           <li><a href="#">শিহরণ</a></li>                                            
+           <li><a href="#">কল্পদেবী</a></li>                                            
+           <li><a href="#">এক অলি</a></li>                                            
+           <li><a href="#">মন উতালা</a></li>                                            
+           <li><a href="#">দুদিনের তরে</a></li>                                            
+           <li><a href="#">হাসিয়া কহে</a></li>                                            
+           <li><a href="#">অনুপমা</a></li>                                            
+           <li><a href="#">ভুল করে</a></li>                                                       
+        </ul>
+     <li>
+        <a href="#">পান পেয়ালা</a>
+        <ul>
+            <li><a href="#">চাঁদনী</a></li>
+            <li><a href="#">জাগো</a></li>                                            
+            <li><a href="#">কল্পিতা</a></li>
+            <li><a href="#">ফুল</a></li>
+           <li><a href="#">তোমারে</a></li>
+           <li><a href="#">অনুরাগ</a></li>
+           <li><a href="#">অতীত স্মৃতি</a></li>
+           <li><a href="#">প্রিয়তমা</a></li>
+           <li><a href="#">হাস্নাহেনা</a></li>
+           <li><a href="#">আষাঢ়ের বৃষ্টি</a></li>
+           <li><a href="#">কবিতা</a></li>                                            
+           <li><a href="#">প্রেয়সী</a></li>                                            
+           <li><a href="#">হ্রদি-মন</a></li>                                            
+           <li><a href="#">জীবনের যতো</a></li>                                            
+           <li><a href="#">ঝরা-যামী</a></li>                                            
+           <li><a href="#">বিরহের ব্যথা</a></li>                                            
+           <li><a href="#">সমাপন</a></li>                                            
+           <li><a href="#">অতীত নিয়ে</a></li>                                            
+           <li><a href="#">নিশি এলে</a></li>                                                       
+           <li><a href="#">বিহঙ্গের সুর</a></li>                                            
+           <li><a href="#">ঝরা নিশি</a></li>                                            
+           <li><a href="#">কেহে প্রেয়সী</a></li>                                                       
+           <li><a href="#">প্রাণ প্রেয়সী</a></li>                                                       
+           <li><a href="#">বধুর সুরে</a></li>                                                                             
+           <li><a href="#">ইয়া মোঃ(সঃ)</a></li>                                                                                      
+        </ul>
+    <li>
+        <a href="#">প্রিয়োতমা</a>
+        <ul>
+            <li><a href="#">বনিতা</a></li>
+            <li><a href="#">কানন মাঝে</a></li>                                            
+            <li><a href="bonita/pram.html">প্রেম</a></li>
+            <li><a href="#">আধার</a></li>
+           <li><a href="#">দিন</a></li>
+           <li><a href="#">হ্রদয়</a></li>
+           <li><a href="#">ভৃঙ্গললোনা</a></li>
+           <li><a href="#">প্রিয়তমা</a></li>
+           <li><a href="#">হাস্নাহেনা</a></li>
+           <li><a href="#">আষাঢ়ের বৃষ্টি</a></li>
+           <li><a href="#">কবিতা</a></li>                                            
+           <li><a href="#">প্রেয়সী</a></li>                                            
+           <li><a href="#">হ্রদি-মন</a></li>                                            
+           <li><a href="#">জীবনের যতো</a></li>                                            
+           <li><a href="#">ঝরা-যামী</a></li>                                            
+           <li><a href="#">বিরহের ব্যথা</a></li>                                            
+           <li><a href="#">সমাপন</a></li>                                            
+           <li><a href="#">অতীত নিয়ে</a></li>                                            
+           <li><a href="#">নিশি এলে</a></li>                                                       
+           <li><a href="#">বিহঙ্গের সুর</a></li>                                            
+           <li><a href="#">ঝরা নিশি</a></li>                                            
+           <li><a href="#">কেহে প্রেয়সী</a></li>                                                       
+           <li><a href="#">প্রাণ প্রেয়সী</a></li>                                                       
+           <li><a href="#">বধুর সুরে</a></li>                                                                             
+           <li><a href="#">ইয়া মোঃ(সঃ)</a></li>                                                                                      
+        </ul>  
+    <li>
+        <a href="#">রস পেয়ালা</a>
+        <ul>
+            <li><a href="#">বনিতা</a></li>
+            <li><a href="#">কানন মাঝে</a></li>                                            
+            <li><a href="bonita/pram.html">প্রেম</a></li>
+            <li><a href="#">আধার</a></li>
+           <li><a href="#">দিন</a></li>
+           <li><a href="#">হ্রদয়</a></li>
+           <li><a href="#">ভৃঙ্গললোনা</a></li>
+           <li><a href="#">প্রিয়তমা</a></li>
+           <li><a href="#">হাস্নাহেনা</a></li>
+           <li><a href="#">আষাঢ়ের বৃষ্টি</a></li>
+           <li><a href="#">কবিতা</a></li>                                            
+           <li><a href="#">প্রেয়সী</a></li>                                            
+           <li><a href="#">হ্রদি-মন</a></li>                                            
+           <li><a href="#">জীবনের যতো</a></li>                                            
+           <li><a href="#">ঝরা-যামী</a></li>                                            
+           <li><a href="#">বিরহের ব্যথা</a></li>                                            
+           <li><a href="#">সমাপন</a></li>                                            
+           <li><a href="#">অতীত নিয়ে</a></li>                                            
+           <li><a href="#">নিশি এলে</a></li>                                                       
+           <li><a href="#">বিহঙ্গের সুর</a></li>                                            
+           <li><a href="#">ঝরা নিশি</a></li>                                            
+           <li><a href="#">কেহে প্রেয়সী</a></li>                                                       
+           <li><a href="#">প্রাণ প্রেয়সী</a></li>                                                       
+           <li><a href="#">বধুর সুরে</a></li>                                                                             
+           <li><a href="#">ইয়া মোঃ(সঃ)</a></li>                                                                                      
+        </ul>
+
+   <li>
+    <a href="#">বিবিধ কবিতা</a>
+    <ul class="noJS">
+            <li><a href="#">বনিতা</a></li>
+            <li><a href="#">কানন মাঝে</a></li>                                            
+            <li><a href="bonita/pram.html">প্রেম</a></li>
+            <li><a href="#">আধার</a></li>
+           <li><a href="#">দিন</a></li>
+           <li><a href="#">হ্রদয়</a></li>
+           <li><a href="#">ভৃঙ্গললোনা</a></li>
+           <li><a href="#">প্রিয়তমা</a></li>
+           <li><a href="#">হাস্নাহেনা</a></li>
+           <li><a href="#">আষাঢ়ের বৃষ্টি</a></li>
+           <li><a href="#">কবিতা</a></li>                                            
+           <li><a href="#">প্রেয়সী</a></li>                                            
+           <li><a href="#">হ্রদি-মন</a></li>                                            
+           <li><a href="#">জীবনের যতো</a></li>                                            
+           <li><a href="#">ঝরা-যামী</a></li>                                            
+           <li><a href="#">বিরহের ব্যথা</a></li>                                            
+           <li><a href="#">সমাপন</a></li>                                            
+           <li><a href="#">অতীত নিয়ে</a></li>                                            
+           <li><a href="#">নিশি এলে</a></li>                                                       
+           <li><a href="#">বিহঙ্গের সুর</a></li>                                            
+           <li><a href="#">ঝরা নিশি</a></li>                                            
+           <li><a href="#">কেহে প্রেয়সী</a></li>                                                       
+           <li><a href="#">প্রাণ প্রেয়সী</a></li>                                                       
+           <li><a href="#">বধুর সুরে</a></li>                                                                             
+           <li><a href="#">ইয়া মোঃ(সঃ)</a></li>                                                                                      
+    </ul>
+ </li>
+</ul>
+</body>
+
+</html>

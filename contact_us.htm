@@ -1,0 +1,323 @@
+<html>
+
+<html>
+<head>
+                  <style type="text/css">		
+	
+		/* 
+	#navigation { WIDTH: 200px }
+	#navigation UL { PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none }
+	#navigation LI { BORDER-BOTTOM: #ed9f9f 1px solid }
+	#navigation LI A:link { BORDER-RIGHT: #711515 1px solid; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0.5em; FONT-SIZE: 90%; PADDING-BOTTOM: 0.4em; BORDER-LEFT: #711515 12px solid; COLOR: #ffffff; PADDING-TOP: 0.4em; BACKGROUND-COLOR: #b51032; TEXT-DECORATION: none }
+	#navigation LI A:visited { BORDER-RIGHT: #711515 1px solid; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0.5em; FONT-SIZE: 90%; PADDING-BOTTOM: 0.4em; BORDER-LEFT: #711515 12px solid; COLOR: #ffffff; PADDING-TOP: 0.4em; BACKGROUND-COLOR: #b51032; TEXT-DECORATION: none }
+	#navigation LI A:hover { COLOR: #ffffff; BACKGROUND-COLOR: #711515 }
+	#navigation UL UL { MARGIN-LEFT: 12px }
+	#navigation UL UL LI { MARGIN: 0px; BORDER-BOTTOM: #711515 1px solid }
+	#navigation UL UL A:link { COLOR: #711515; BACKGROUND-COLOR: #ed9f9f }
+	#navigation UL UL A:visited { COLOR: #711515; BACKGROUND-COLOR: #ed9f9f }
+	#navigation UL UL A:hover { COLOR: #ffffff; BACKGROUND-COLOR: #711515 }
+	 */
+	
+	#dhtmlgoodies_slidedown_menu li{
+		list-style-type:none;
+		position:relative;			 	
+	}
+	
+	#dhtmlgoodies_slidedown_menu ul{
+		margin:0px;
+		padding:0px;
+		position:relative;	
+	}
+
+	#dhtmlgoodies_slidedown_menu div{
+		margin:0px;
+		padding:0px;
+	}
+	
+	/* 	Layout CSS */
+	#dhtmlgoodies_slidedown_menu{		
+		width:154px;   /* width of total menu  */
+	}
+
+	/* All A tags - i.e menu items. */
+	#dhtmlgoodies_slidedown_menu a{
+		color: #000;
+		text-decoration:none;	
+		display:block;
+		clear:both;		
+		padding-left:2px;		
+		
+	}
+	
+	/*
+	A tags 
+	*/
+	#dhtmlgoodies_slidedown_menu .slMenuItem_depth1{	/* Main menu items */
+		margin-top:1px;
+		/*border-bottom:1px solid #000;*/
+		font-weight:normal;
+		font:Verdana, Arial, Helvetica, sans-serif;
+		
+		
+		 BORDER-BOTTOM: #125f31 1px solid;
+		 COLOR: #ffffff; BACKGROUND-COLOR: #125f31;
+		 BORDER-RIGHT: #711515 1px solid; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0.5em; FONT-SIZE: 11px; PADDING-BOTTOM: 0.4em; BORDER-LEFT: #711515 12px solid; COLOR: #ffffff; PADDING-TOP: 0.4em; BACKGROUND-COLOR: #125f31; TEXT-DECORATION: none;
+		width:154px; /* width of individual menu  */
+	}	
+	#dhtmlgoodies_slidedown_menu .slMenuItem_depth2{	/* Sub menu items */
+		margin-top:1px;
+		/*font-weight:bold;*/
+		
+		 BORDER-BOTTOM: #ed9f9f 1px solid;
+		 COLOR: #ffffff; BACKGROUND-COLOR: #711515; 
+		 BORDER-RIGHT: #711515 1px solid; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0.5em; FONT-SIZE: 11px; PADDING-BOTTOM: 0.4em; BORDER-LEFT: #990000 12px solid; COLOR: #ffffff; PADDING-TOP: 0.4em; BACKGROUND-COLOR: #CC3300; TEXT-DECORATION: none;
+		 width:148px;	
+	}	
+	#dhtmlgoodies_slidedown_menu .slMenuItem_depth3{	/* Sub menu items */
+		margin-top:1px;
+		font-style:italic;
+		color:blue;
+		
+		 BORDER-BOTTOM: #ed9f9f 1px solid;
+		 COLOR: #ffffff; BACKGROUND-COLOR: #711515;
+		 BORDER-RIGHT: #711515 1px solid; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0.5em; FONT-SIZE: 90%; PADDING-BOTTOM: 0.4em; BORDER-LEFT: #711515 12px solid; COLOR: #ffffff; PADDING-TOP: 0.4em; BACKGROUND-COLOR: #b51032; TEXT-DECORATION: none;
+		 width:157px;	
+
+	}	
+	#dhtmlgoodies_slidedown_menu .slMenuItem_depth4{	/* Sub menu items */
+		margin-top:1px;
+		color:red;
+		
+		 BORDER-BOTTOM: #ed9f9f 1px solid;
+		 COLOR: #ffffff; BACKGROUND-COLOR: #711515;
+		 BORDER-RIGHT: #711515 1px solid; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0.5em; FONT-SIZE: 90%; PADDING-BOTTOM: 0.4em; BORDER-LEFT: #711515 12px solid; COLOR: #ffffff; PADDING-TOP: 0.4em; BACKGROUND-COLOR: #b51032; TEXT-DECORATION: none;
+		 width:157px;	
+
+	}	
+	#dhtmlgoodies_slidedown_menu .slMenuItem_depth5{	/* Sub menu items */
+		margin-top:1px;
+		
+		 BORDER-BOTTOM: #ed9f9f 1px solid;
+		 COLOR: #ffffff; BACKGROUND-COLOR: #711515;
+		 BORDER-RIGHT: #711515 1px solid; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0.5em; FONT-SIZE: 90%; PADDING-BOTTOM: 0.4em; BORDER-LEFT: #711515 12px solid; COLOR: #ffffff; PADDING-TOP: 0.4em; BACKGROUND-COLOR: #b51032; TEXT-DECORATION: none;
+		 width:157px;	
+
+	}
+
+	/* UL tags, i.e group of menu utems. 
+	It's important to add style to the UL if you're specifying margins. If not, assign the style directly
+	to the parent DIV, i.e. 
+	
+	#dhtmlgoodies_slidedown_menu .slideMenuDiv1
+	
+	instead of 
+	
+	#dhtmlgoodies_slidedown_menu .slideMenuDiv1 ul
+	*/
+	
+	#dhtmlgoodies_slidedown_menu .slideMenuDiv1 ul{
+		padding:1px;
+		
+	}
+	#dhtmlgoodies_slidedown_menu .slideMenuDiv2 ul{
+		margin-left:5px;
+		padding:1px;
+	}
+	#dhtmlgoodies_slidedown_menu .slideMenuDiv3 ul{
+		margin-left:10px;
+		padding:1px;
+	}
+	#dhtmlgoodies_slidedown_menu .slMenuItem_depth4 ul{
+		margin-left:15px;
+		padding:1px;
+	}
+	
+		          </style>
+<title>WebTech Developments Limited, Dhaka, Bangladesh</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="description" CONTENT="Akceycom Ltd. provides internet connections, antivirus, security services, SEO, website design, domain, hosting, outsource solutions">
+<META NAME="keywords" CONTENT="aknet, aknet bangladesh, bangladesh, application service provider, asp bangladesh, biometrics scanner, biometrics attendance system, biometrics door access system, finger print scanner, finger print scanner attendance system, finger print scanner door access system, server co-location, secure online storage, disaster recovery, web applications, search engine optimization, SEO, dhaka, web design bangladesh, outsource, web design, web development dhaka, web design dhaka, web development, ecommerce, dynamic web design, f-secure, antivirus, security partner, kaspersky, aknet security center, isp, internet service provider, mobile based application">
+<META NAME="REVISIT-AFTER" CONTENT="6 days">
+<link href="decore.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                  </script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7376674-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="ddaccordion.js"></script>
+<script type="text/javascript" src="extra_deco.js"></script>
+<script type="text/javascript">
+
+                  </script>
+<style type="text/css">
+
+
+                  .style2 {
+	text-decoration: none;
+}
+
+
+                  </style>
+<body bgcolor="#C1C1C1" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="775" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td valign="top"><table width="775" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td background="images/bg_green.jpg"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr valign="top"> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="9">&nbsp;</td>
+              </tr>
+            </table></td>
+          <td width="475" bgcolor="#F76F05"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td valign="top" class="body"> 
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" height="567">
+                    <tr> 
+                      <td height="19" bgcolor="#008000">&nbsp;</td>
+                      <td class="text" height="19" bgcolor="#008000">&nbsp;</td>
+                      <td height="19" bgcolor="#008000">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td width="8%" height="132" bgcolor="#008000">&nbsp;</td>
+                      <td width="92%" valign="top" class="text" height="132" bgcolor="#008000"> <p>
+                      <span class="heading_red">CONTACT</span> 
+                          <span class="heading_green"> US:</span><br>
+                          <br>
+                          <strong>WebTech Developments Limited</strong><br>
+                          <strong>Sha-97/A, Uttar Badda, Apt#4B<br>
+                          Gulshan-1, Dhaka 1212. </strong></p></td>
+                      <td width="0%" height="132" bgcolor="#008000">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td bgcolor="#008000" style="height: 115px"></td>
+                      <td bgcolor="#008000" style="height: 115px">
+                      <table width="100%" cellpadding="2" cellspacing="0" height="224">
+                          <tr> 
+                            <td colspan="2" height="19"><p>Sunday 
+                            to Friday 
+                                enquiries: </p></td>
+                          </tr>
+                          <tr class="body_text"> 
+                            <td height="19"><p>
+                            Phone </p></td>
+                            <td height="19"><p>
+                            +88-02-8414994, 8417985 </p></td>
+                          </tr>
+                          <tr> 
+                            <td class="body_text" height="19"><p>
+                            Email </p></td>
+                            <td class="body_text" height="19"><p>
+                            <a href="mailto:info@shingon-bd.com" class="style2">
+                            info@webtech-bd.com </a></p></td>
+                          </tr>
+                          <tr> 
+                            <td class="body_text" height="19"><p>
+                            &nbsp; </p></td>
+                            <td class="body_text" height="19"><p>
+                            &nbsp; </p></td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" class="body_text" height="38"><p>Saturday enquiries:</p></td>
+                          </tr>
+                          <tr> 
+                            <td width="24%" class="body_text" height="17">
+                              <p>Cell line </p></td>
+                            <td width="76%" class="body_text" height="17">
+                              <p>+88-01743522838, 01552380679</p></td>
+                          </tr>
+                          <tr> 
+                            <td class="body_text" height="19"><p>
+                            Email </p></td>
+                            <td class="body_text" height="19"><p>
+                            <a href="mailto: info@webtech-bd.com" class="style2">
+                            info@webtech-bd.com </a></p></td>
+                          </tr>
+                          <tr> 
+                            <td class="body_text" height="19"><p>
+                            &nbsp; </p></td>
+                            <td class="body_text" height="19"><p>
+                            &nbsp; </p></td>
+                          </tr>
+                          <tr> 
+                            <td class="body_text" height="19"><p>
+                            Fax </p></td>
+                            <td class="body_text" height="19"><p>
+                            +88-02-8416263 </p></td>
+                          </tr>
+                        </table></td>
+                      <td bgcolor="#008000" style="height: 115px"></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" bgcolor="#008000">&nbsp;</td>
+                      <td height="19" bgcolor="#008000">&nbsp;</td>
+                      <td height="19" bgcolor="#008000">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td height="133" bgcolor="#008000">&nbsp;</td>
+                      <td valign="top" height="133" bgcolor="#008000"> 
+                        <p>For complaints and suggestions 
+                          <a href="com_sugg.php" class="style2">
+                        click 
+                          here.</a></p>
+                        <p><br>
+                          <br>
+                          <a href="contact_f.php" class="style2">Presales and sales information 
+                          request</a><br>
+                        </p></td>
+                      <td height="133" bgcolor="#008000">&nbsp;</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td background="images/bg_green2.jpg"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr valign="top"> 
+                <td height="472" class="left">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td valign="top"> &nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table></td>
+                <td width="8"><img src="images/index_19.jpg" width="8" alt=""></td>
+              </tr>
+            </table></td>
+        </tr>
+        </table></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="#C1C1C1">
+<h3 align="center"><a href="index.htm">
+<img border="0" src="home.gif" width="60" height="30"></a></h3></td>
+  </tr>
+</table>
+    <p align="right">
+<b>
+<font color="#800080">
+<font size="1" face="Times New Roman">Copyright </font>
+<span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+<font size="1" face="Times New Roman">©</font></span><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="1" face="Times New Roman"> 
+2007 WebTech Developments Ltd. All rights reserved |</font></span></font></b><p style="word-spacing: 1; text-indent: 1; margin: 1" align="right">
+<font face="Times New Roman" size="1"><font color="#0000FF">Mail
+to:</font> <a href="mailto:info@webtech-bd.com">info@btech-bd.com</a><font color="#0000FF"> |</font> </font></font></font>
+<a href="http://www.webtech-bd.com"><font face="Times New Roman" size="1" color="#0000FF">www.webtech-bd.com</font></a><font face="Times New Roman" size="1" color="#0000FF"> 
+|</font></p>
+    <p style="word-spacing: 1; text-indent: 1; margin: 1" align="right">
+<font face="Times New Roman" size="1" color="#800000">Designed &amp; Hosted by: Kazi Abdus Salam</font></p>
+    </body>
+</html>
+</html>
